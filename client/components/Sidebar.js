@@ -6,8 +6,8 @@ const Sidebar = () => {
 
 
     return (
-        <nav id="nav" className="z-30 fixed bg-secondary w-screen h-[5vh]" >
-            <button onClick={() => setShowSidebar(!showSidebar)} className={`z-50 absolute top-0 right-0 hamburger hamburger--spring${showSidebar ? " is-active" : ""}`} type="button">
+        <nav id="nav" className="z-30 flex fixed w-screen h-[5vh] bg-secondary" >
+            <button onClick={() => setShowSidebar(!showSidebar)} className={`z-50 absolute -top-1 right-0 hamburger hamburger--spring${showSidebar ? " is-active" : ""}`} type="button">
                 <span className="hamburger-box">
                     <span className="hamburger-inner"></span>
                 </span>
