@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    NEXT_PUBLIC_MAPBOX_TOKEN: 'pk.eyJ1IjoicXVpbmFpdG9uIiwiYSI6ImNsNDFuYzVkZjQ1dHEzcXBucno4bjhhc2IifQ._02RZmbcQJlluBavhVzxVg'
+  },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -39,5 +42,5 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };

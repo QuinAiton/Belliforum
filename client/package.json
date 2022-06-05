@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.2",
     "autoprefixer": "^10.4.7",
     "hamburgers": "^1.2.1",
+    "mapbox-gl": "^2.8.2",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-icons": "^4.4.0",
+    "react-map-gl": "^7.0.15",
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {

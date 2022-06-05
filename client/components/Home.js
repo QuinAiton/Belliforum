@@ -1,5 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
+import Contact from './Contact';
+import MapComponent from '../components/MapComponent';
+
 const Home = () => {
     return (
 
@@ -9,7 +11,7 @@ const Home = () => {
                 className="z-10 relative flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-sailboat-image "
             >
                 <div className="z-20 relative w-full h-full bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
-                    <h1 className='text-5xl md:text-7xl'>Belliforum</h1>
+                    <h1 className='text-7xl md:text-7xl'>Belliforum</h1>
                     <hr className='w-1/2 border border-secondary mt-2 mb-5' />
                     <p className='text-2xl'>Providing What You Need</p>
                     <p className='text-2xl'>When you need it</p>
@@ -51,6 +53,9 @@ const Home = () => {
                     <p className='text-lg p-5'>Because we're all about amplifying fun!  In plain English, we help you achieve what you want to do more rapidly and efficently!  Whatever that vision is, we want to be a part of it with you and have fun together doing it.  Our goal is to make your life better, to have more fun and do more of whatever it is that makes you want to get up in the morning.</p>
                 </div>
             </section>
+            <Contact />
+            <MapComponent />
+
         </>
     );
 };
