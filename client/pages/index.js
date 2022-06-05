@@ -4,11 +4,11 @@ import Home from '../components/Home';
 import Footer from '../components/Footer';
 const index = () => {
     return (
-        <div>
+        <>
             <Sidebar />
             <Home />
             <Footer />
-        </div>
+        </>
     );
 };
 
