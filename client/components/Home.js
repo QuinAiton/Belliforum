@@ -36,7 +36,7 @@ const Home = () => {
             </section>
             <div className='my-40 z-20 relative'>
                 <div className=" flex flex-col justify-center items-center max-w-lg m-auto ">
-                    <p className='text-3xl text-center'>WHAT MAKES US DIFFERENT?</p>
+                    <p className='text-3xl text-center text-primary'>WHAT MAKES US DIFFERENT?</p>
                     <hr className='w-1/2 border border-primary mt-2' />
                 </div>
                 <p className=' p-10 text-center text-md'>
