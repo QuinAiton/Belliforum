@@ -1,82 +1,57 @@
 import React from 'react';
-
+import Image from 'next/image';
 const Home = () => {
     return (
 
 
         <>
-            <header id='parralax-header-image'
-                className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-hero-image "
+            <header
+                className="z-10 relative flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-hero-image "
             >
-                <div className="z-10 w-full h-full bg-black bg-opacity-50 flex flex-col gap-10 justify-center items-center p-5 text-white">
-                    <h1 className='text-7xl'>Belliforum</h1>
+                <div className="z-20 relative w-full h-full bg-black bg-opacity-50 flex flex-col gap-5b justify-center items-center p-5 text-white">
+                    <h1 className='text-5xl md:text-7xl'>Belliforum</h1>
+                    <hr className='w-1/2 border border-secondary mt-2 mb-5' />
                     <p className='text-2xl'>Providing What You Need</p>
+                    <p className='text-2xl'>When you need it</p>
                 </div>
             </header>
-            <div className="max-w-lg m-auto">
-                <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat a
-                    magna non varius. Proin leo felis, euismod non porta eget, varius sit amet
-                    sapien. Maecenas in nulla at leo convallis consectetur id a sapien. Nulla
-                    nec pulvinar nisi. Vivamus non facilisis lacus, et volutpat libero. Nulla ac
-                    odio aliquam, accumsan arcu ut, lacinia est. Nulla eu sem elit. Fusce nec
-                    laoreet sem, semper molestie libero.
-                </p>
-                <p className="mb-4">
-                    Ut sagittis lacus consequat accumsan venenatis. Sed sollicitudin, lectus et
-                    fringilla ultrices, dolor nisi scelerisque tortor, vel finibus magna massa
-                    non nunc. Phasellus massa quam, egestas a nisl sed, porta volutpat metus.
-                    Nunc sed elit ac tellus tempor cursus. Suspendisse potenti. Vestibulum
-                    varius rutrum nisl nec consequat. Suspendisse semper dignissim sem viverra
-                    semper. Nulla porttitor, purus nec accumsan pharetra, nisi dolor condimentum
-                    ipsum, id consequat nulla nunc in ligula.
-                </p>
-                <p className="mb-12">
-                    Nulla pharetra lacinia nisi, vitae mollis tellus euismod id. Mauris porta
-                    dignissim hendrerit. Cras id velit varius, fermentum lectus vitae, ultricies
-                    dolor. In bibendum rhoncus purus vel rutrum. Nam vulputate imperdiet
-                    fringilla. Donec blandit libero massa. Suspendisse dictum diam mauris, vitae
-                    fermentum dolor tincidunt in. Pellentesque sollicitudin venenatis dolor,
-                    vitae scelerisque elit ultrices eu. Donec eget sodales risus, quis dignissim
-                    neque.
-                </p>
+            <div className='my-40 z-20 relative'>
+                <div className=" flex flex-col justify-center items-center max-w-lg m-auto mt-40 ">
+                    <p className='text-3xl text-primary'>Powerful</p>
+                    <p className='text-3xl text-primary'>Unconventional</p>
+                    <p className='text-3xl text-primary'>Solutions</p>
+                    <hr className='w-1/2 border border-primary mt-2' />
+
+                </div>
+                <p className='my-10 p-10 text-center text-md'>
+                    Belliforum advocates professional solutions to High Net Worth clients ranging from Philanthropy, Tax Planning, Private Equity, Business Consulting, & Exclusive Market Access.
+                    We work with a select group of sought after industry experts proven in their field of expertise to provide powerful solutions.</p>
             </div>
             <section
-                className="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover custom-img"
+                className=" flex items-center justify-center h-[40vh] mb-12 bg-fixed bg-center bg-cover bg-solutions-image "
             >
-                <div className="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
-                    Parralax inline
+                <div className="-z-0 w-full h-full bg-fixed bg-black bg-opacity-50 flex flex-col gap-5b justify-center items-center p-5 text-white">
+                    <p className='-z-10 p-5 text-center text-3xl fixed top-1/2'>Combined 100+ years of financial industry experience</p>
                 </div>
             </section>
-            <div className="max-w-lg m-auto">
-                <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat a
-                    magna non varius. Proin leo felis, euismod non porta eget, varius sit amet
-                    sapien. Maecenas in nulla at leo convallis consectetur id a sapien. Nulla
-                    nec pulvinar nisi. Vivamus non facilisis lacus, et volutpat libero. Nulla ac
-                    odio aliquam, accumsan arcu ut, lacinia est. Nulla eu sem elit. Fusce nec
-                    laoreet sem, semper molestie libero.
-                </p>
-                <p className="mb-4">
-                    Ut sagittis lacus consequat accumsan venenatis. Sed sollicitudin, lectus et
-                    fringilla ultrices, dolor nisi scelerisque tortor, vel finibus magna massa
-                    non nunc. Phasellus massa quam, egestas a nisl sed, porta volutpat metus.
-                    Nunc sed elit ac tellus tempor cursus. Suspendisse potenti. Vestibulum
-                    varius rutrum nisl nec consequat. Suspendisse semper dignissim sem viverra
-                    semper. Nulla porttitor, purus nec accumsan pharetra, nisi dolor condimentum
-                    ipsum, id consequat nulla nunc in ligula.
-                </p>
-                <p className="mb-4">
-                    Nulla pharetra lacinia nisi, vitae mollis tellus euismod id. Mauris porta
-                    dignissim hendrerit. Cras id velit varius, fermentum lectus vitae, ultricies
-                    dolor. In bibendum rhoncus purus vel rutrum. Nam vulputate imperdiet
-                    fringilla. Donec blandit libero massa. Suspendisse dictum diam mauris, vitae
-                    fermentum dolor tincidunt in. Pellentesque sollicitudin venenatis dolor,
-                    vitae scelerisque elit ultrices eu. Donec eget sodales risus, quis dignissim
-                    neque.
-                </p>
+            <div className='my-40 z-20 relative'>
+                <div className=" flex flex-col justify-center items-center max-w-lg m-auto ">
+                    <p className='text-3xl text-center'>WHAT MAKES US DIFFERENT?</p>
+                    <hr className='w-1/2 border border-primary mt-2' />
+                </div>
+                <p className=' p-10 text-center text-md'>
+                    Brand Loyalty must be earned and re-earned every day.  Like fashion, what's in style and hot today, may change tomorrow.  Belliforum operates with a combined 100+ years of financial industry experience knowing that today's best may not always be.  We are not tied to any brand, institution, product, service, or firm.  We are here to find the best of the best and adapt immediatly.</p>
             </div>
+            <section
+                className="z-10 relative flex items-center justify-center h-screen bg-fixed bg-center bg-cover bg-yacht-image "
+            >
+                <div className="z-20 relative w-full h-full bg-black bg-opacity-[65%] flex flex-col gap-5b justify-center items-center p-5 text-white">
+                    <h1 className='text-4xl md:text-4xl'>Why Belliforum?</h1>
+                    <hr className='w-1/2 border border-secondary mt-2 mb-5' />
+                    <p className='text-lg p-5'>Because we're all about amplifying fun!  In plain English, we help you achieve what you want to do more rapidly and efficently!  Whatever that vision is, we want to be a part of it with you and have fun together doing it.  Our goal is to make your life better, to have more fun and do more of whatever it is that makes you want to get up in the morning.</p>
 
+                </div>
+            </section>
         </>
     );
 };

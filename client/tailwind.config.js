@@ -33,7 +33,8 @@ module.exports = {
       },
       backgroundImage: {
         'hero-image': "url('/assets/headerImage.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'solutions-image': "url('/assets/solutions.jpg')",
+        'yacht-image': "url('/assets/yacht.jpg')",
       }
     }
   },
