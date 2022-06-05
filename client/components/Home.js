@@ -6,9 +6,9 @@ const Home = () => {
 
         <>
             <header
-                className="z-10 relative flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-hero-image "
+                className="z-10 relative flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover bg-sailboat-image "
             >
-                <div className="z-20 relative w-full h-full bg-black bg-opacity-50 flex flex-col gap-5b justify-center items-center p-5 text-white">
+                <div className="z-20 relative w-full h-full bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
                     <h1 className='text-5xl md:text-7xl'>Belliforum</h1>
                     <hr className='w-1/2 border border-secondary mt-2 mb-5' />
                     <p className='text-2xl'>Providing What You Need</p>
@@ -30,7 +30,7 @@ const Home = () => {
             <section
                 className=" flex items-center justify-center h-[40vh] mb-12 bg-fixed bg-center bg-cover bg-solutions-image "
             >
-                <div className="-z-0 w-full h-full bg-fixed bg-black bg-opacity-50 flex flex-col gap-5b justify-center items-center p-5 text-white">
+                <div className="-z-0 w-full h-full bg-fixed bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
                     <p className='-z-10 p-5 text-center text-3xl fixed top-1/2'>Combined 100+ years of financial industry experience</p>
                 </div>
             </section>
@@ -45,11 +45,10 @@ const Home = () => {
             <section
                 className="z-10 relative flex items-center justify-center h-screen bg-fixed bg-center bg-cover bg-yacht-image "
             >
-                <div className="z-20 relative w-full h-full bg-black bg-opacity-[65%] flex flex-col gap-5b justify-center items-center p-5 text-white">
+                <div className="z-20 relative w-full h-full bg-black bg-opacity-[55%] flex flex-col gap-5b justify-center items-center p-5 text-white">
                     <h1 className='text-4xl md:text-4xl'>Why Belliforum?</h1>
                     <hr className='w-1/2 border border-secondary mt-2 mb-5' />
                     <p className='text-lg p-5'>Because we're all about amplifying fun!  In plain English, we help you achieve what you want to do more rapidly and efficently!  Whatever that vision is, we want to be a part of it with you and have fun together doing it.  Our goal is to make your life better, to have more fun and do more of whatever it is that makes you want to get up in the morning.</p>
-
                 </div>
             </section>
         </>

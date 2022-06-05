@@ -35,6 +35,7 @@ module.exports = {
         'hero-image': "url('/assets/headerImage.jpg')",
         'solutions-image': "url('/assets/solutions.jpg')",
         'yacht-image': "url('/assets/yacht.jpg')",
+        'sailboat-image': "url('/assets/sailboat.jpg')",
       }
     }
   },
