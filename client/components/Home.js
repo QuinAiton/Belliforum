@@ -32,9 +32,9 @@ const Home = () => {
                 </div>
             </section>
             <section
-                className=" flex items-center justify-center h-[40vh] mb-12 bg-fixed bg-center bg-cover bg-solutions-image "
+                className=" flex items-center justify-center h-[40vh] md:h-[60vh] mb-12 bg-fixed bg-center bg-cover bg-solutions-image "
             >
-                <div className="-z-0 w-full h-[40vh] bg-fixed bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
+                <div className="-z-0 w-full h-[40vh] md:h-[60vh] bg-fixed bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
                     <p className='-z-10 p-5 text-center text-3xl md:text-5xl fixed top-1/2'>Combined 100+ years of financial industry experience</p>
                 </div>
             </section>
@@ -55,8 +55,10 @@ const Home = () => {
                     <p className='p-10 md:px-[20vw] text-center text-md md:text-xl'>Because we're all about amplifying fun!  In plain English, we help you achieve what you want to do more rapidly and efficently!  Whatever that vision is, we want to be a part of it with you and have fun together doing it.  Our goal is to make your life better, to have more fun and do more of whatever it is that makes you want to get up in the morning.</p>
                 </div>
             </section>
-            <Contact />
-            <MapComponent />
+            <div className='grid md:grid-cols-2'>
+                <Contact />
+                <MapComponent />
+            </div>
 
         </>
     );

@@ -3,7 +3,7 @@ import { MdMarkEmailRead } from 'react-icons/md';
 import { GrLocationPin } from 'react-icons/gr';
 const Contact = () => {
     return (
-        <div className=" relative z-20 max-w-screen-xl px-4 py-0 mx-auto sm:px-6 lg:px-8">
+        <div className=" relative z-20 w-full px-4 py-0 mx-auto sm:px-6 lg:px-8">
             <div className="max-w-lg mx-auto">
                 <div className='flex flex-col justify-center items-center gap-4'>
                     <h1 className='text-center text-4xl mt-20 mb-10 text-primary'>Contact Us Today</h1>
@@ -84,7 +84,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <button type="submit" className="block w-full px-5 py-3 text-sm font-medium text-white bg-primary rounded-lg">
+                    <button type="submit" className="block w-full px-5 py-3 text-sm font-medium text-white bg-primary rounded-lg border hover:bg-secondary hover:text-primary hover:border-primary transition-colors">
                         Send
                     </button>
                 </form>
