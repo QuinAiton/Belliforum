@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.2",
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.7",
     "hamburgers": "^1.2.1",
     "mapbox-gl": "^2.8.2",
