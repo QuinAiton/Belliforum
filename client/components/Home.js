@@ -55,10 +55,10 @@ const Home = () => {
                     <p data-aos='fade-right' className='p-10 md:px-[20vw] text-center text-md md:text-xl'>Because we're all about amplifying fun!  In plain English, we help you achieve what you want to do more rapidly and efficently!  Whatever that vision is, we want to be a part of it with you and have fun together doing it.  Our goal is to make your life better, to have more fun and do more of whatever it is that makes you want to get up in the morning.</p>
                 </div>
             </section>
-            <div className='grid md:grid-cols-2'>
+            <section className='grid md:grid-cols-2'>
                 <Contact />
                 <MapComponent />
-            </div>
+            </section>
 
         </>
     );
