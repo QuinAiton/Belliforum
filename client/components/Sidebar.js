@@ -1,52 +1,26 @@
 
 import { useState } from "react";
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import SocialButtons from "./SocialButtons";
-
+import Link from "next/link";
 const Sidebar = () => {
     const [showSidebar, setShowSidebar] = useState(false);
 
 
     return (
-        <nav data-aos='slide-down' id="nav" className="z-30 fixed w-screen h-[5vh] bg-primary" >
+        <nav id="nav" className="z-30 fixed w-screen h-[5vh] bg-primary" >
             {/* Large screen nav */}
-            <div className="hidden lg:flex justify-between items-center w-screen px-10">
+            <div data-aos='fade-down' className="hidden lg:flex justify-between items-center w-screen px-10">
                 <div className="text-secondary">LOGO HERE</div>
                 <ul className="w-full flex justify-center gap-6 text-sm">
                     <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            About
-                        </a>
+                        <Link href='/'>
+                            <a className="text-secondary transition hover:text-secondary/75 text-xl">Home</a>
+                        </Link>
                     </li>
-
                     <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Careers
-                        </a>
-                    </li>
-
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            History
-                        </a>
-                    </li>
-
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Services
-                        </a>
-                    </li>
-
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Blog
-                        </a>
+                        <Link href='/about'>
+                            <a className="text-secondary transition hover:text-secondary/75 text-xl">About Us</a>
+                        </Link>
                     </li>
                 </ul>
                 <SocialButtons />
@@ -64,40 +38,16 @@ const Sidebar = () => {
                     }`}
             >
                 <ul className=" w-full h-1/2 flex flex-col items-center gap-6 text-sm justify-center">
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            About
-                        </a>
-                    </li>
 
                     <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Careers
-                        </a>
+                        <Link href='/'>
+                            <a className="text-secondary transition hover:text-secondary/75 text-xl">Home</a>
+                        </Link>
                     </li>
-
                     <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            History
-                        </a>
-                    </li>
-
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Services
-                        </a>
-                    </li>
-
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a className="text-secondary transition hover:text-secondary/75 text-xl" href="/">
-                            Blog
-                        </a>
+                        <Link href='/about'>
+                            <a className="text-secondary transition hover:text-secondary/75 text-xl">About Us</a>
+                        </Link>
                     </li>
                 </ul>
                 <SocialButtons />

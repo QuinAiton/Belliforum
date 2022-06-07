@@ -18,7 +18,8 @@ const MapComponent = () => {
                 mapStyle="mapbox://styles/mapbox/light-v9"
                 mapboxAccessToken={MAPBOX_TOKEN}
             >
-                {showPopup && (
+                {/* TODO: this is causing the screeen to jump to bottom.  */}
+                {/* {showPopup && (
                     <Popup longitude={-123.11513} latitude={49.28689}
                         anchor="bottom"
                         onClose={() => setShowPopup(false)}
@@ -27,9 +28,14 @@ const MapComponent = () => {
                         <div className='flex flex-col items-center gap-2'>
                             800 West Hastings, Vancouver BC
                             <br />
-                            <a className='py-1/2 px-2 bg-secondary text-primary border border-primary rounded-full hover:bg-primary hover:text-secondary' target={"_blank"} href='https://www.google.com/maps/dir/?api=1&destination=800%20West%20Hastings,%20Vancouver%20BC%20%20%E2%80%8B'>Direction</a>
+                            <a
+                                className='py-1/2 px-2 bg-secondary text-primary border border-primary rounded-full hover:bg-primary hover:text-secondary'
+                                target="_blank"
+                                href='https://www.google.com/maps/dir/?api=1&destination=800%20West%20Hastings,%20Vancouver%20BC%20%20%E2%80%8B'
+                            >Direction
+                            </a>
                         </div>
-                    </Popup>)}
+                    </Popup>)} */}
                 <Marker longitude={-123.11513} latitude={49.28689} color="red" />
             </Map>
         </div>

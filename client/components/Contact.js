@@ -6,19 +6,19 @@ const Contact = () => {
         <div className=" relative z-20 w-full px-4 py-0 mx-auto sm:px-6 lg:px-8">
             <div className="max-w-lg mx-auto">
                 <div className='flex flex-col justify-center items-center gap-4'>
-                    <h1 className='text-center text-4xl mt-20 mb-10 text-primary'>Contact Us Today</h1>
-                    <div className='flex items-end gap-2'>
+                    <h1 data-aos="fade-right" className='text-center text-4xl mt-20 mb-10 text-primary'>Contact Us Today</h1>
+                    <div data-aos="fade-left" className='flex items-end gap-2'>
                         <GrLocationPin className='text-xl text-primary' />
                         <p>800 West Hastings, Vancouver BC</p>
                     </div>
-                    <div className='flex items-end gap-2'>
+                    <div data-aos="fade-right" className='flex items-end gap-2'>
                         <MdMarkEmailRead className='text-xl text-primary' />
                         <a href='mailto:grant@levupfinancials.com'>grant@levupfinancials.com</a>
                     </div>
                 </div>
-                <form action="" className="p-8 mt-6 mb-0 space-y-4 rounded-lg ">
+                <form data-aos="fade-in" action="" className="p-8 mt-6 mb-0 space-y-4 rounded-lg ">
                     <div>
-                        <label for="firstName" className="text-sm font-medium">First Name</label>
+                        <label htmlFor="firstName" className="text-sm font-medium">First Name</label>
                         <div className="relative mt-1">
                             <input
                                 type="text"
@@ -29,7 +29,7 @@ const Contact = () => {
 
                             />
                         </div>
-                        <label for="email" className="text-sm font-medium">Last Name</label>
+                        <label htmlFor="email" className="text-sm font-medium">Last Name</label>
                         <div className="relative mt-1">
                             <input
                                 type="text"
@@ -40,8 +40,21 @@ const Contact = () => {
                             />
                         </div>
                     </div>
+
                     <div>
-                        <label for="email" className="text-sm font-medium">Email</label>
+                        <label htmlFor="password" className="text-sm font-medium">Phone #</label>
+                        <div className="relative mt-1">
+                            <input
+                                type="text"
+                                id="phone"
+                                className="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm focus:ring-1 focus:ring-primary focus:border-primary"
+                                placeholder="Enter Phone Number"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label htmlFor="email" className="text-sm font-medium">Email</label>
                         <div className="relative mt-1">
                             <input
                                 type="email"
@@ -71,7 +84,7 @@ const Contact = () => {
                     </div>
 
                     <div>
-                        <label for="password" className="text-sm font-medium">Message</label>
+                        <label htmlFor="password" className="text-sm font-medium">Message</label>
 
                         <div className="relative mt-1">
                             <textarea
