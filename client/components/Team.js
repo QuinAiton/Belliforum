@@ -4,7 +4,6 @@ import { CgArrowLongDown } from 'react-icons/cg';
 import Footer from './Footer';
 const Team = () => {
 
-
     return (
         <>
             <header
@@ -15,7 +14,7 @@ const Team = () => {
                     <p className='uppercase'>Committed to Excellence</p>
                     <hr className='border border-primary w-[15vw]' />
                 </div>
-                <h1 className=' p-2 place-self-start text-7xl md:text-8xl md:ml-[15vw] uppercase text-primary'>Meet The Team</h1>
+                <h1 className=' sticky p-2 place-self-start text-7xl md:text-8xl md:ml-[15vw] uppercase text-primary'>Meet The Team</h1>
                 <p className=' w-10/12 place-self-center md:place-self-end my-10 p-5 md:px-[20vw] text-center text-md md:text-xl text-black'>
                     Belliforum advocates professional solutions to High Net Worth clients ranging from Philanthropy, Tax Planning, Private Equity, Business Consulting, & Exclusive Market Access.
                     We work with a select group of sought after industry experts proven in their field of expertise to provide powerful solutions.</p>
@@ -25,7 +24,7 @@ const Team = () => {
                 </div>
             </header>
 
-            <section className=' bg-secondary bg-opacity-40 md:bg-opacity-60 grid grid-col md:grid-cols-3 w-full h-full md:px-[15vw] place-items-center place-content-center mx-auto pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  '>
+            <section className=' bg-secondary pt-20 grid grid-col md:grid-cols-3 w-full h-full md:px-[15vw] place-items-center place-content-center mx-auto pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  '>
 
                 <div className=' bg-white grid grid-rows-3 w-10/12 md:w-80 h-[60vh] md:h-[50vh] mx-auto drop-shadow-2xl shadow-xl'>
                     <div className='relative row-span-1 w-full h-full rounded-full'>
