@@ -7,9 +7,11 @@ const about = () => {
         < div className='absolute'>
             <Sidebar />
             <Team />
-            <Footer />
+            <div>
+                <Footer isRelative={true} />
+            </div>
         </div>
     );
 };
 
-export default about;
+export default about;;;
