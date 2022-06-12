@@ -4,6 +4,12 @@ export default {
   type: "document",
   fields: [
     {
+      name: "title",
+      title: "Title",
+      type: "string",
+      description: "what do you want the contact header to say?",
+    },
+    {
       name: "location",
       title: "Buisness Location",
       type: "string",

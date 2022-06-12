@@ -1,25 +1,31 @@
 export default {
-  name: "team",
-  title: "Team",
+  name: "team_members",
+  title: "Team Members",
   type: "document",
   fields: [
     {
-      name: "name",
+      name: "image",
+      title: "Member Photo",
+      type: "image",
+      description: "Please provide a headshot here.",
+    },
+    {
+      name: "title",
       title: "Name",
       type: "string",
       description: "Name of team member?",
     },
     {
-      name: "title",
+      name: "position",
       title: "Job Title",
       type: "string",
-      description: "Where is there position at the company?",
+      description: "Where is their position at the company?",
     },
     {
       name: "description",
       title: "Description",
       type: "string",
-      description: "What would you like people to know about you?",
+      description: "What would you like people to know about this member",
     },
   ],
 };

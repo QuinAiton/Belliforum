@@ -6,6 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import Home from "./Home";
 import Social_Links from "./Social_Links";
 import Contact from "./Contact";
+import Team_Home from "./Team_Home";
 import Team from "./Team";
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -13,5 +14,5 @@ export default createSchema({
   name: "Belliforum",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([Home, Team, Contact, Social_Links]),
+  types: schemaTypes.concat([Home, Team_Home, Team, Contact, Social_Links]),
 });
