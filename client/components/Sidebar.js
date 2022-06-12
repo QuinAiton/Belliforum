@@ -7,7 +7,7 @@ const Sidebar = () => {
 
 
     return (
-        <nav id="nav" className="z-30 fixed w-screen h-[5vh] bg-primary" >
+        <nav id="nav" className="z-[999] fixed w-screen h-[5vh] bg-primary" >
             {/* Large screen nav */}
             <div data-aos='fade-down' className="hidden lg:flex justify-between items-center w-screen px-10">
                 <div className="text-secondary">LOGO HERE</div>
