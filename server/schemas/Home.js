@@ -89,6 +89,12 @@ export default {
           type: "document",
           fields: [
             {
+              name: "image",
+              title: "Background Image",
+              type: "image",
+              description: "what background image do you want behind the why section",
+            },
+            {
               name: "title",
               title: "Title",
               type: "string",
