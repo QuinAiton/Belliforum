@@ -1,25 +1,25 @@
-import * as React from 'react';
-import Map, { Marker, Popup } from 'react-map-gl';
+import * as React from "react";
+import Map, { Marker, Popup } from "react-map-gl";
 
-import 'mapbox-gl/dist/mapbox-gl.css';
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
-const MapComponent = () => {
-    const [showPopup, setShowPopup] = React.useState(true);
-    return (
-        <div className='h-[400px] w-screen md:w-full md:h-full'>
-            <Map
-                initialViewState={{
-                    latitude: 49.28689,
-                    longitude: -123.11513,
-                    zoom: 13,
 
-                }}
-                mapStyle="mapbox://styles/mapbox/light-v9"
-                mapboxAccessToken={MAPBOX_TOKEN}
-            >
-                {/* TODO: this is causing the screeen to jump to bottom.  */}
-                {/* {showPopup && (
+const MapComponent = () => {
+  const [showPopup, setShowPopup] = React.useState(true);
+  return (
+    <div className="h-[400px] w-screen md:w-full md:h-full">
+      <Map
+        initialViewState={{
+          latitude: 49.28689,
+          longitude: -123.11513,
+          zoom: 13,
+        }}
+        mapStyle="mapbox://styles/mapbox/light-v9"
+        mapboxAccessToken={MAPBOX_TOKEN}
+      >
+        {/* TODO: this is causing the screeen to jump to bottom.  */}
+        {/* {showPopup && (
                     <Popup longitude={-123.11513} latitude={49.28689}
                         anchor="bottom"
                         onClose={() => setShowPopup(false)}
@@ -36,9 +36,9 @@ const MapComponent = () => {
                             </a>
                         </div>
                     </Popup>)} */}
-                <Marker longitude={-123.11513} latitude={49.28689} color="red" />
-            </Map>
-        </div>
-    );
+        <Marker longitude={-123.11513} latitude={49.28689} color="red" />
+      </Map>
+    </div>
+  );
 };
 export default MapComponent;
