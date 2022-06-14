@@ -4,12 +4,12 @@ import { Home } from "../components/Home";
 import Footer from "../components/Footer";
 import sanityClient from "../config/sanityClient";
 
-const index = (props) => {
-  console.log(props);
+const index = ({ sanity }) => {
+  const sanityProps = sanity[0];
   return (
     <>
       <Sidebar />
-      <Home />
+      <Home sanity={sanityProps} />
       <Footer />
     </>
   );
@@ -17,7 +17,7 @@ const index = (props) => {
 
 export default index;
 
-export const GetStaticProps = async () => {
+export const getStaticProps = async () => {
   const sanity = await sanityClient.fetch(
     `*[_type == "homepage"]{ 
         subtitle, 
