@@ -2,14 +2,19 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import { Home } from "../components/Home";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
+import MapComponent from "../components/MapComponent";
 import sanityClient from "../config/sanityClient";
 
-const index = ({ sanity }) => {
-  const sanityProps = sanity[0];
+const index = ({ homeProps, contactProps }) => {
   return (
     <>
       <Sidebar />
-      <Home sanity={sanityProps} />
+      <Home sanity={homeProps[0]} />
+      <section className="grid md:grid-cols-2">
+        <Contact sanity={contactProps[0]} />
+        <MapComponent />
+      </section>
       <Footer />
     </>
   );
@@ -18,7 +23,7 @@ const index = ({ sanity }) => {
 export default index;
 
 export const getStaticProps = async () => {
-  const sanity = await sanityClient.fetch(
+  const homeProps = await sanityClient.fetch(
     `*[_type == "homepage"]{ 
         subtitle, 
         title, 
@@ -35,5 +40,12 @@ export const getStaticProps = async () => {
         }
     }`
   );
-  return { props: { sanity } };
+  const contactProps = await sanityClient.fetch(
+    `*[_type == "contact"]{ 
+      email, 
+      location, 
+      title
+    }`
+  );
+  return { props: { homeProps, contactProps } };
 };

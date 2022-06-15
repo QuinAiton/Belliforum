@@ -18,8 +18,17 @@ export default {
     {
       name: "subtitle",
       title: "Header subtitle",
-      type: "string",
-      description: "What's the subtitle of the homepage hero?",
+      type: "document",
+      fields: [
+        {
+          name: "subOne",
+          type: "string",
+        },
+        {
+          name: "subTwo",
+          type: "string",
+        },
+      ],
     },
     {
       name: "home_page_content",
@@ -34,8 +43,21 @@ export default {
             {
               name: "title",
               title: "Title",
-              type: "string",
-              description: "What's the title for the first section?",
+              type: "document",
+              fields: [
+                {
+                  name: "one",
+                  type: "string",
+                },
+                {
+                  name: "two",
+                  type: "string",
+                },
+                {
+                  name: "three",
+                  type: "string",
+                },
+              ],
             },
             {
               name: "body",

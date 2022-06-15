@@ -1,21 +1,21 @@
 import React from "react";
 import { MdMarkEmailRead } from "react-icons/md";
 import { GrLocationPin } from "react-icons/gr";
-const Contact = () => {
+const Contact = ({ sanity }) => {
   return (
     <div className=" relative z-20 w-full px-4 py-0 mx-auto sm:px-6 lg:px-8">
       <div className="max-w-lg mx-auto">
         <div className="flex flex-col justify-center items-center gap-4">
           <h1 data-aos="fade-right" className="text-center text-4xl mt-20 mb-10 text-primary">
-            Contact Us Today
+            {sanity.title}
           </h1>
           <div data-aos="fade-left" className="flex items-end gap-2">
             <GrLocationPin className="text-xl text-primary" />
-            <p>800 West Hastings, Vancouver BC</p>
+            <p>{sanity.location}</p>
           </div>
           <div data-aos="fade-right" className="flex items-end gap-2">
             <MdMarkEmailRead className="text-xl text-primary" />
-            <a href="mailto:grant@levupfinancials.com">grant@levupfinancials.com</a>
+            <a href="mailto:grant@levupfinancials.com">{sanity.email}</a>
           </div>
         </div>
         <form data-aos="fade-in" action="" className="p-8 mt-6 mb-0 space-y-4 rounded-lg ">
