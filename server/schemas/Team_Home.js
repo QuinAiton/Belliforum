@@ -16,10 +16,10 @@ export default {
       description: "What would you like to be the main header for this page?",
     },
     {
-      name: "sub_header",
-      title: "Sub Header",
+      name: "body",
+      title: "Body",
       type: "string",
-      description: "What would you like the Sub header to be?",
+      description: "What would you like the main content of this page to say?",
     },
   ],
 };

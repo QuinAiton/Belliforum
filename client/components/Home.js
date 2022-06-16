@@ -3,11 +3,9 @@ import React, { useEffect } from "react";
 import { urlFor } from "../lib/urlFor";
 
 export const Home = ({ sanity }) => {
-  console.log(sanity);
   const homeImage = urlFor(sanity.image).url();
   const statImage = urlFor(sanity.home_page_content.stat_section.stat_image).url();
   const sectionThreeImage = urlFor(sanity.home_page_content.section_three.image).url();
-  console.log(homeImage);
   return (
     <>
       <header
