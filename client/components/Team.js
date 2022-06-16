@@ -29,15 +29,21 @@ const Team = ({ memberProps, teamProps }) => {
   return (
     <>
       <header className=" flex flex-col z-10  items-center justify-center h-screen mb-12 mx-auto fixed top-0 md:top-20 left-0 bg-center bg-cover bg-white md:gap-15">
-        <div className="text-1xl pb-5 flex items-center mx-auto">
+        <div data-aos={"fade-left"} className="text-1xl pb-5 flex items-center mx-auto">
           <hr className="border border-primary w-[15vw]" />
           <p className="uppercase">{teamProps.header}</p>
           <hr className="border border-primary w-[15vw]" />
         </div>
-        <h1 className=" sticky p-2 place-self-start text-7xl md:text-8xl md:ml-[15vw] uppercase text-primary">
+        <h1
+          data-aos={"fade-right"}
+          className=" sticky p-2 place-self-start text-7xl md:text-8xl md:ml-[15vw] uppercase text-primary"
+        >
           {teamProps.title}
         </h1>
-        <p className=" w-10/12 place-self-center md:place-self-end my-10 p-5 md:px-[20vw] text-center text-md md:text-xl text-black">
+        <p
+          data-aos={"fade-up"}
+          className=" w-10/12 place-self-center md:place-self-end my-10 p-5 md:px-[10vw] text-center text-md md:text-2xl text-black"
+        >
           {teamProps.body}
         </p>
         <div className="flex flex-col justify-center items-center gap-2 relative -bottom-12 md:-bottom-[8vh]">
