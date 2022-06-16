@@ -35,7 +35,7 @@ const MapComponent = () => {
                 target="_blank"
                 href="https://www.google.com/maps/dir/?api=1&destination=800%20West%20Hastings,%20Vancouver%20BC%20%20%E2%80%8B"
               >
-                Direction
+                Directions
               </a>
             </div>
           </Popup>

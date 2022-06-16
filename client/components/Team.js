@@ -11,14 +11,18 @@ const Team = ({ memberProps, teamProps }) => {
         key={member.title}
         className=" bg-white grid grid-rows-5 w-11/12 md:w-full h-[60vh] md:h-[80vh] drop-shadow-xl shadow-xl place-content-center"
       >
-        <div className="relative row-span-2 w-full h-full rounded-full">
+        <div data-aos="fade-in" className="relative row-span-2 w-full h-full rounded-full">
           <Image src={imageUrl} layout="fill" objectFit="cover" />
         </div>
         <div className="bg-secondary row-span-3 flex flex-col items-center justify-center gap-3">
-          <h2 className="text-3xl uppercase text-primary">{member.title}</h2>
-          <p>{member.position}</p>
-          <hr className="w-[70%] border border-primary mt-2 mb-2" />
-          <p className="px-5 pb-5">{member.description}</p>
+          <h2 data-aos="fade-in" className="text-3xl uppercase text-primary">
+            {member.title}
+          </h2>
+          <p data-aos="fade-in">{member.position}</p>
+          <hr data-aos="fade-in" className="w-[70%] border border-primary mt-2 mb-2" />
+          <p data-aos="fade-in" className="px-5 pb-5">
+            {member.description}
+          </p>
         </div>
       </div>
     );
@@ -52,7 +56,10 @@ const Team = ({ memberProps, teamProps }) => {
         </div>
       </header>
 
-      <section className=" bg-secondary pt-20 grid grid-col md:grid-cols-3 w-full h-full md:px-[5vw] place-items-center place-content-center mx-0 pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  ">
+      <section
+        data-aos="fade-in"
+        className=" bg-secondary pt-10 grid grid-col md:grid-cols-3 w-full h-full md:px-[5vw] place-items-center place-content-center mx-0 pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  "
+      >
         {MemoTeamMembers}
       </section>
     </>
