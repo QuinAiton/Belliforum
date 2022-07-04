@@ -60,6 +60,15 @@ const Team = ({ memberProps, teamProps }) => {
         data-aos="fade-in"
         className=" bg-secondary pt-10 grid grid-col md:grid-cols-3 w-full h-full md:px-[5vw] place-items-center place-content-center mx-0 pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  "
       >
+        Belliforum connects successful entrepreneurs with the country’s best strategic partners in
+        tax planning, business succession planning, partnerships, philanthropy, and private equity.
+        We work to compliment your current team and optimize your goals to accelerate your vision.
+      </section>
+
+      <section
+        data-aos="fade-in"
+        className=" bg-secondary pt-10 grid grid-col md:grid-cols-3 w-full h-full md:px-[5vw] place-items-center place-content-center mx-0 pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  "
+      >
         {MemoTeamMembers}
       </section>
     </>

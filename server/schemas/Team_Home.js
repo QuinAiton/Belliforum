@@ -21,5 +21,25 @@ export default {
       type: "string",
       description: "What would you like the main content of this page to say?",
     },
+    {
+      name: "about_us",
+      title: "about us",
+      type: "document",
+      fields: [
+        {
+          name: "title",
+          title: "title",
+          type: "document",
+          fields: [
+            {
+              name: " ",
+              title: "content",
+              type: "string",
+              description: "What would you like the to tell people about your company?",
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
