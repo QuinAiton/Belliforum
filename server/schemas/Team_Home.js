@@ -27,17 +27,28 @@ export default {
       type: "document",
       fields: [
         {
-          name: "title",
-          title: "title",
-          type: "document",
-          fields: [
-            {
-              name: " ",
-              title: "content",
-              type: "string",
-              description: "What would you like the to tell people about your company?",
-            },
-          ],
+          name: "",
+          title: "content",
+          type: "string",
+          description: "What would you like the to tell people about your company?",
+        },
+        {
+          name: "Body",
+          title: "content",
+          type: "string",
+          description: "What would you like the to tell people about your company?",
+        },
+        {
+          name: "Body",
+          title: "content",
+          type: "string",
+          description: "What would you like the to tell people about your company?",
+        },
+        {
+          name: "Body",
+          title: "content",
+          type: "string",
+          description: "What would you like the to tell people about your company?",
         },
       ],
     },
