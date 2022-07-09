@@ -20,10 +20,16 @@ export default about;
 
 export const getStaticProps = async () => {
   const teamProps = await sanityClient.fetch(
-    `*[_type == "team_home"]{
+    `*[_type == "about_us"]{
       title, 
-      body, 
-      header
+      hero_content, 
+      header, 
+  about_us_content{ 
+section_1{title,body},
+section_2{title,body},
+section_3{title,body},
+section_4{title,body}
+}
     }`
   );
   const memberProps = await sanityClient.fetch(
