@@ -7,25 +7,25 @@ const Team = ({ memberProps, teamProps }) => {
   const { about_us_content: content } = teamProps;
   const aboutContentArray = Object.values(content);
   const aboutContent = aboutContentArray.map((section, index) => {
+    const imageConverter = urlFor(section.image).url();
     return (
       <div
-        className={`${
-          index % 2 === 0 ? "bg-primary " : "bg-secondary "
-        }grid grid-cols-2 place-content-center mb-20 h-[80vh] w-full p-40`}
+        className={`flex flex-col md:flex-row  h-[80vh] w-full
+        ${index % 2 === 0 ? "  bg-secondary flex-row-reverse" : " bg-primary flex-row"}`}
       >
-        <div className={`${index % 2 === 0 ? "col-start-2 " : "col-start-1 "}`}></div>
-        <div className={`flex flex-col gap-10`}>
+        <div className={`md:w-1/2 h-1/2 md:h-full relative`}>
+          <Image src={`${imageConverter}`} layout="fill" objectFit="cover" />
+        </div>
+        <div className="flex flex-col my-auto gap-10 place-self-center md:p-20 md:w-1/2 ">
           <h4
-            className={`text-5xl text-center ${
-              index % 2 === 0 ? "text-secondary " : "text-primary "
-            }`}
+            className={`text-5xl text-center 
+            ${index % 2 === 0 ? " text-primary " : " text-secondary "}`}
           >
             {section.title}
           </h4>
           <p
-            className={`text-xl text-center font-light ${
-              index % 2 === 0 ? "text-secondary " : "text-primary "
-            }`}
+            className={`text-xl text-center font-light 
+            ${index % 2 === 0 ? " text-primary " : " text-secondary "}`}
           >
             {section.body}
           </p>
@@ -39,7 +39,7 @@ const Team = ({ memberProps, teamProps }) => {
     return (
       <div
         key={member.title}
-        className=" bg-white grid grid-rows-5 w-11/12 md:w-full h-[60vh] md:h-[80vh] drop-shadow-xl shadow-xl place-content-center"
+        className=" bg-white grid grid-rows-5 w-full h-[70vh] md:h-[50vh] drop-shadow-xl shadow-xl place-content-center"
       >
         <div className="relative row-span-2 w-full h-full rounded-full">
           <Image src={imageUrl} layout="fill" objectFit="cover" />
@@ -65,35 +65,35 @@ const Team = ({ memberProps, teamProps }) => {
         </div>
         <h1
           data-aos={"fade-right"}
-          className=" sticky p-2 place-self-start text-7xl md:text-8xl md:ml-[15vw] uppercase text-primary"
+          className=" sticky p-2 place-self-start text-7xl md:text-8xl mx-auto md:ml-[20vw] uppercase text-primary"
         >
           {teamProps.title}
         </h1>
         <p
           data-aos={"fade-up"}
-          className=" w-10/12 place-self-center md:place-self-end my-10 p-5 md:px-[10vw] text-center text-md md:text-2xl text-black font-light"
+          className=" w-5/6 place-self-center md:place-self-end my-10 p-5 md:px-[10vw] text-center text-xl md:text-2xl text-black font-light"
         >
           {teamProps.hero_content}
         </p>
-        <div className="flex flex-col justify-center items-center gap-2 relative -bottom-12 md:-bottom-[8vh]">
+        <div className="flex flex-col justify-center items-center gap-2 relative -bottom-[20vh] md:-bottom-[0vh] xxl:-bottom-[12vh]">
           <p className="text-primary">scroll</p>
           <CgArrowLongDown className=" text-primary text-2xl animate-bounce" />
         </div>
       </header>
 
       <div className=" bg-secondary pt-10 grid grid-col w-full h-full place-items-center place-content-center mx-0 pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  ">
-        <section>{aboutContent}</section>
+        <section className="mb-20">{aboutContent}</section>
         <section>
           <div>
-            <div className="my-20 flex flex-col justify-center items-center gap-5 ">
+            <div className="mt-20 flex flex-col justify-center items-center gap-5 ">
               <h2 className="text-center text-5xl text-primary">Meet Our Team Of Experts</h2>
               <hr className="border border-primary w-[35vw]" />
             </div>
-            <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-10">
+            <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-10 ">
               {MemoTeamMembers}
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-2 relative -bottom-12 md:-bottom-[8vh]">
+          <div className="flex flex-col justify-center items-center gap-2 relative -bottom-12 md:-bottom-[5vh]">
             <p className="text-primary"></p>
             <CgArrowLongDown className="text-primary text-2xl animate-bounce" />
           </div>

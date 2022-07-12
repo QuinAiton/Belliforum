@@ -1,6 +1,6 @@
 export default {
   name: "about_us",
-  title: "about_us",
+  title: "About Us",
   type: "document",
   fields: [
     {
@@ -42,6 +42,12 @@ export default {
               type: "string",
               description: "What would you like the main content of this page to say?",
             },
+            {
+              name: "image",
+              title: "image",
+              type: "image",
+              description: "place service image here",
+            },
           ],
         },
         {
@@ -59,6 +65,12 @@ export default {
               title: "body",
               type: "string",
               description: "What would you like the main content of this page to say?",
+            },
+            {
+              name: "image",
+              title: "image",
+              type: "image",
+              description: "place service image here",
             },
           ],
         },
@@ -78,6 +90,12 @@ export default {
               type: "string",
               description: "What would you like the main content of this page to say?",
             },
+            {
+              name: "image",
+              title: "image",
+              type: "image",
+              description: "place service image here",
+            },
           ],
         },
         {
@@ -95,6 +113,12 @@ export default {
               title: "body",
               type: "string",
               description: "What would you like the main content of this page to say?",
+            },
+            {
+              name: "image",
+              title: "image",
+              type: "image",
+              description: "place service image here",
             },
           ],
         },

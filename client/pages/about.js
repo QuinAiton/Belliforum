@@ -25,10 +25,10 @@ export const getStaticProps = async () => {
       hero_content, 
       header, 
   about_us_content{ 
-section_1{title,body},
-section_2{title,body},
-section_3{title,body},
-section_4{title,body}
+section_1{title,body, image},
+section_2{title,body, image},
+section_3{title,body, image},
+section_4{title,body, image}
 }
     }`
   );

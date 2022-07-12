@@ -13,7 +13,7 @@ export const Home = ({ sanity }) => {
         className="z-10 relative flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover"
       >
         <div className="z-20 relative w-full h-screen bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
-          <h1 data-aos="fade-up" className="text-7xl md:text-7xl">
+          <h1 data-aos="fade-up" className="text-7xl md:text-8xl">
             {sanity.title}
           </h1>
           <hr data-aos="fade-up" className="w-[30vw] border border-secondary mt-2 mb-5" />

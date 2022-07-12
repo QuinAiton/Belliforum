@@ -5,7 +5,7 @@ const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <nav id="nav" className="z-[999] fixed w-screen h-[10vh] bg-primary">
+    <nav id="nav" className="z-[999] fixed w-screen h-[5vh] md:h-[10vh] bg-primary">
       {/* Large screen nav */}
       <div
         data-aos="fade-down"
