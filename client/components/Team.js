@@ -39,9 +39,9 @@ const Team = ({ memberProps, teamProps }) => {
     return (
       <div
         key={member.title}
-        className=" bg-white grid grid-rows-5 w-full h-[70vh] md:h-[50vh] drop-shadow-xl shadow-xl place-content-center"
+        className=" bg-white grid grid-rows-5 w-full md:full h-[70vh] md:h-[50vh] drop-shadow-xl shadow-xl place-content-center"
       >
-        <div className="relative row-span-2 w-full h-full rounded-full">
+        <div className="relative row-span-2 w-full h-full">
           <Image src={imageUrl} layout="fill" objectFit="cover" />
         </div>
         <div className="bg-secondary row-span-3 flex flex-col items-center justify-center gap-3">
@@ -89,7 +89,7 @@ const Team = ({ memberProps, teamProps }) => {
               <h2 className="text-center text-5xl text-primary">Meet Our Team Of Experts</h2>
               <hr className="border border-primary w-[35vw]" />
             </div>
-            <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-10 ">
+            <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-5 md:p-10 md:w-5/6 md:mx-auto   ">
               {MemoTeamMembers}
             </div>
           </div>
