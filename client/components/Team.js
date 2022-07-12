@@ -39,7 +39,7 @@ const Team = ({ memberProps, teamProps }) => {
     return (
       <div
         key={member.title}
-        className=" bg-white grid grid-rows-5 w-full md:full h-[70vh] md:h-[50vh] drop-shadow-xl shadow-xl place-content-center"
+        className=" bg-white grid grid-rows-5 w-full md:full h-[70vh] md:h-[50vh]  place-content-center shadow-xl"
       >
         <div className="relative row-span-2 w-full h-full">
           <Image src={imageUrl} layout="fill" objectFit="cover" />
