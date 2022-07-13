@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdMarkEmailRead } from "react-icons/md";
 import { GrLocationPin } from "react-icons/gr";
-const Contact = ({ sanity }) => {
+const Contact = ({ sanity, formSubmitHandler }) => {
   return (
     <div className=" relative z-20 w-full px-4 py-0 mx-auto sm:px-6 lg:px-8">
       <div className="max-w-lg mx-auto">
@@ -18,7 +18,16 @@ const Contact = ({ sanity }) => {
             <a href="mailto:grant@levupfinancials.com">{sanity.email}</a>
           </div>
         </div>
-        <form data-aos="fade-in" action="" className="p-8 mt-6 mb-0 space-y-4 rounded-lg ">
+        <form
+          data-aos="fade-in"
+          action="https://formsubmit.co/quinaiton@hotmail.com"
+          method="POST"
+          className="p-8 mt-6 mb-0 space-y-4 rounded-lg "
+        >
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://belliforum.com" />
+          <input type="text" name="_honey" style={{ display: "none" }} />
+          <input type="hidden" name="_subject" value="New message from Belliforum.com!" />
           <div>
             <label htmlFor="firstName" className="text-sm font-medium">
               First Name
@@ -26,7 +35,7 @@ const Contact = ({ sanity }) => {
             <div className="relative mt-1">
               <input
                 type="text"
-                id="FirstName"
+                name="FirstName"
                 className="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm focus:ring-1 focus:ring-primary focus:border-primary "
                 placeholder="John"
                 required
@@ -38,7 +47,7 @@ const Contact = ({ sanity }) => {
             <div className="relative mt-1">
               <input
                 type="text"
-                id="LastName"
+                name="LastName"
                 className="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm focus:ring-1 focus:ring-primary focus:border-primary"
                 placeholder="Doe"
                 required
@@ -53,7 +62,7 @@ const Contact = ({ sanity }) => {
             <div className="relative mt-1">
               <input
                 type="text"
-                id="phone"
+                name="phone"
                 className="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm focus:ring-1 focus:ring-primary focus:border-primary"
                 placeholder="Enter Phone Number"
               />
@@ -67,7 +76,7 @@ const Contact = ({ sanity }) => {
             <div className="relative mt-1">
               <input
                 type="email"
-                id="email"
+                name="email"
                 className="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm focus:ring-1 focus:ring-primary focus:border-primary"
                 placeholder="Enter email"
                 required
@@ -100,7 +109,7 @@ const Contact = ({ sanity }) => {
             <div className="relative mt-1">
               <textarea
                 type="text"
-                id="message"
+                name="message"
                 className="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm focus:ring-1 focus:ring-primary focus:border-primary"
                 placeholder="Enter Message"
                 required
