@@ -10,7 +10,7 @@ const Team = ({ memberProps, teamProps }) => {
     const imageConverter = urlFor(section.image).url();
     return (
       <section
-        key={member.title}
+        key={section.title}
         style={{ backgroundImage: `url(${imageConverter})` }}
         className="z-10 relative flex items-center justify-center h-screen bg-fixed bg-center bg-cover"
       >
