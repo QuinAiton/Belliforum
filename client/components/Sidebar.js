@@ -5,13 +5,13 @@ const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <nav id="nav" className="z-[999] fixed w-screen h-[5vh] md:h-[10vh] bg-primary">
+    <nav id="nav" className="z-[999] fixed w-screen h-[5vh] md:h-[7vh] bg-primary">
       {/* Large screen nav */}
       <div
         data-aos="fade-down"
-        className="hidden lg:grid grid-cols-3 place-items-end items-center w-screen px-10 py-5"
+        className="hidden lg:flex h-full  justify-between items-center my-auto w-screen px-10"
       >
-        <div className="text-secondary place-self-start">LOGO HERE</div>
+        <div className="text-secondary">LOGO HERE</div>
         <ul className="w-full flex justify-center gap-6 text-sm place-self-center">
           <li>
             <Link href="/">
