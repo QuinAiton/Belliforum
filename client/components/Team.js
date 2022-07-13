@@ -9,28 +9,20 @@ const Team = ({ memberProps, teamProps }) => {
   const aboutContent = aboutContentArray.map((section, index) => {
     const imageConverter = urlFor(section.image).url();
     return (
-      <div
-        className={`flex flex-col md:flex-row  h-[80vh] w-full
-        ${index % 2 === 0 ? "  bg-secondary flex-row-reverse" : " bg-primary flex-row"}`}
+      <section
+        style={{ backgroundImage: `url(${imageConverter})` }}
+        className="z-10 relative flex items-center justify-center h-screen bg-fixed bg-center bg-cover"
       >
-        <div className={`md:w-1/2 h-1/2 md:h-full relative`}>
-          <Image src={`${imageConverter}`} layout="fill" objectFit="cover" />
-        </div>
-        <div className="flex flex-col my-auto gap-10 place-self-center md:p-20 md:w-1/2 ">
-          <h4
-            className={`text-5xl text-center 
-            ${index % 2 === 0 ? " text-primary " : " text-secondary "}`}
-          >
+        <div className="z-20 relative w-full h-screen bg-black bg-opacity-[60%] flex flex-col gap-5b justify-center items-center p-5 text-white">
+          <h1 data-aos="fade-right" className="text-4xl md:text-4xl">
             {section.title}
-          </h4>
-          <p
-            className={`text-xl text-center font-light 
-            ${index % 2 === 0 ? " text-primary " : " text-secondary "}`}
-          >
+          </h1>
+          <hr data-aos="fade-left" className="w-[30vw] border border-secondary mt-2 mb-5" />
+          <p data-aos="fade-right" className="p-10 md:px-[20vw] text-center text-md md:text-xl">
             {section.body}
           </p>
         </div>
-      </div>
+      </section>
     );
   });
 
@@ -65,40 +57,39 @@ const Team = ({ memberProps, teamProps }) => {
         </div>
         <h1
           data-aos={"fade-right"}
-          className=" sticky p-2 place-self-start text-7xl md:text-8xl mx-auto md:ml-[20vw] uppercase text-primary"
+          className=" sticky p-2 text-7xl md:text-8xl mx-auto uppercase text-primary"
         >
           {teamProps.title}
         </h1>
         <p
           data-aos={"fade-up"}
-          className=" w-5/6 place-self-center md:place-self-end my-10 p-5 md:px-[10vw] text-center text-xl md:text-2xl text-black font-light"
+          className=" w-5/6 place-self-center  my-10 p-5 md:px-[10vw] text-center text-xl md:text-2xl text-black font-light"
         >
           {teamProps.hero_content}
         </p>
         <div className="flex flex-col justify-center items-center gap-2 relative -bottom-[20vh] md:-bottom-[0vh] xxl:-bottom-[12vh]">
-          <p className="text-primary">scroll</p>
+          <p className="text-primary">scroll to see our services</p>
           <CgArrowLongDown className=" text-primary text-2xl animate-bounce" />
         </div>
       </header>
 
-      <div className=" bg-secondary pt-10 grid grid-col w-full h-full place-items-center place-content-center mx-0 pb-20 gap-10 mt-20 z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  ">
-        <section className="mb-20">{aboutContent}</section>
-        <section>
-          <div>
-            <div className="mt-20 flex flex-col justify-center items-center gap-5 ">
-              <h2 className="text-center text-5xl text-primary">Meet Our Team Of Experts</h2>
-              <hr className="border border-primary w-[35vw]" />
-            </div>
-            <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-5 md:p-10 md:w-5/6 md:mx-auto   ">
-              {MemoTeamMembers}
-            </div>
+      <section className="relative top-[100vh]">{aboutContent}</section>
+
+      <section className=" bg-secondary grid grid-col w-full h-full place-items-center place-content-center mx-0 pb-20 gap-10  z-20 relative top-[90vh] md:top-[100vh]  rounded-xl  ">
+        <div>
+          <div className="mt-20 flex flex-col justify-center items-center gap-5 ">
+            <h2 className="text-center text-5xl text-primary">Meet Our Team Of Experts</h2>
+            <hr className="border border-primary w-[35vw]" />
           </div>
-          <div className="flex flex-col justify-center items-center gap-2 relative -bottom-12 md:-bottom-[5vh]">
-            <p className="text-primary"></p>
-            <CgArrowLongDown className="text-primary text-2xl animate-bounce" />
+          <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-5 md:p-10 md:w-5/6 md:mx-auto rounded-xl   ">
+            {MemoTeamMembers}
           </div>
-        </section>
-      </div>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-2 relative -bottom-12 md:-bottom-[5vh]">
+          <p className="text-primary"></p>
+          <CgArrowLongDown className="text-primary text-2xl animate-bounce" />
+        </div>
+      </section>
     </>
   );
 };
