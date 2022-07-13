@@ -32,8 +32,8 @@ const MapComponent = () => {
               <br />
               <a
                 className="py-1/2 px-2 bg-secondary text-primary border border-primary rounded-full hover:bg-primary hover:text-secondary focus:none"
-                target="_blank"
-                rel="noreferrer"
+                // target="_blank"
+                // rel="noreferrer"
                 href="https://www.google.com/maps/dir/?api=1&destination=800%20West%20Hastings,%20Vancouver%20BC%20%20%E2%80%8B"
               >
                 Directions
