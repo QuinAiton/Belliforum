@@ -8,6 +8,18 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+
+html,
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
 .hamburger {
   color: white;
   z-index: 50;

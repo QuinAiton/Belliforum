@@ -1,17 +1,26 @@
 import { useState } from "react";
 import SocialButtons from "./SocialButtons";
 import Link from "next/link";
+import Image from "next/image";
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <nav id="nav" className="z-[999] fixed w-screen h-[5vh] md:h-[7vh] bg-primary">
+    <nav id="nav" className="z-[999] fixed w-screen h-[7vh] bg-primary">
       {/* Large screen nav */}
       <div
         data-aos="fade-down"
         className="hidden lg:flex h-full  justify-between items-center my-auto w-screen px-10"
       >
-        <div className="text-secondary">LOGO HERE</div>
+        <div className="text-secondary">
+          <Image
+            src="/assets/belliforumLogo.jpg"
+            height={75}
+            width={75}
+            objectFit="contain"
+            className="rounded-full scale-150"
+          />
+        </div>
         <ul className="w-full flex justify-center gap-6 text-sm place-self-center">
           <li>
             <Link href="/">
