@@ -3,10 +3,10 @@ import { MdMarkEmailRead } from "react-icons/md";
 import { GrLocationPin } from "react-icons/gr";
 const Contact = ({ sanity, formSubmitHandler }) => {
   return (
-    <div className=" relative z-20 w-full px-4 py-0 mx-auto sm:px-6 lg:px-8">
+    <div className=" relative z-20 w-full py-0 mx-auto lg:px-8">
       <div className="max-w-lg mx-auto">
         <div className="flex flex-col justify-center items-center gap-4">
-          <h1 data-aos="fade-right" className="text-center text-4xl mt-20 mb-10 text-primary">
+          <h1 data-aos="fade-right" className="text-center text-4xl my-10 text-primary">
             {sanity.title}
           </h1>
           <div data-aos="fade-left" className="flex items-end gap-2">

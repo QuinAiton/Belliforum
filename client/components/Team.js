@@ -45,7 +45,7 @@ const Team = ({ memberProps, teamProps }) => {
           <h2 className="text-3xl uppercase text-primary">{member.title}</h2>
           <p>{member.position}</p>
           <hr className="w-[70%] border border-primary mt-2 mb-2" />
-          <p className="px-5 pb-5">{member.description}</p>
+          <p className="px-5 pb-5 text-center">{member.description}</p>
         </div>
       </div>
     );
@@ -54,29 +54,29 @@ const Team = ({ memberProps, teamProps }) => {
 
   return (
     <>
-      <header className="flex flex-col z-10  items-center justify-center h-screen my-12 mx-auto fixed top-0 md:top-20 left-0 bg-center bg-cover bg-white md:gap-20">
+      <header className="flex flex-col z-10  items-center justify-center h-screen my-12 mx-auto fixed top-0 md:top-20 left-0 bg-center bg-cover bg-white md:gap-20 px-5 md:px-0">
         <div
           data-aos={"fade-left"}
           className="text-1xl pb-5 flex items-center justify-center mx-auto"
         >
-          <hr className="border border-primary w-[15vw] mr-3" />
+          <hr className="border border-primary w-[15vw] mr-1" />
           <p className="uppercase">{teamProps.header}</p>
-          <hr className="border border-primary w-[15vw] ml-3" />
+          <hr className="border border-primary w-[15vw] ml-1" />
         </div>
         <h1
           data-aos={"fade-right"}
-          className=" sticky p-2 text-8xl md:text-8xl mx-auto uppercase text-primary text-end"
+          className="sticky text-6xl md:text-8xl mx-auto uppercase text-primary text-end"
         >
           {teamProps.title}
         </h1>
         <p
           data-aos={"fade-up"}
-          className=" w-5/6 place-self-center  my-10 p-5 md:px-[10vw] text-left text-xl md:text-2xl text-black font-light"
+          className=" w-full place-self-center my-10 md:px-[10vw] text-xl md:text-2xl text-black font-light text-center"
         >
           {teamProps.hero_content}
         </p>
-        <div className="flex flex-col justify-center items-center gap-2 relative -bottom-[20vh] md:-bottom-[0vh] xxl:-bottom-[12vh]">
-          <p className="text-primary">scroll to see our services</p>
+        <div className="flex flex-col justify-center items-center gap-2 relative -bottom-[15vh] md:-bottom-[0vh] xxl:-bottom-[12vh]">
+          <p className="text-primary">scroll</p>
           <CgArrowLongDown className=" text-primary text-2xl animate-bounce" />
         </div>
       </header>

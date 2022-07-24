@@ -49,11 +49,11 @@ const Sidebar = () => {
         </span>
       </button>
       <div
-        className={` w-3/4 md:w-1/2 top-0 right-0 bg-primary p-10 pl-10 text-white fixed h-full z-40  ease-in-out duration-300  ${
+        className={` w-5/6 md:w-1/2 top-0 right-0 bg-primary text-white fixed h-full z-40  ease-in-out duration-300  ${
           showSidebar ? "translate-x-0 " : "translate-x-full"
         }`}
       >
-        <ul className=" w-full h-1/2 flex flex-col items-center gap-6 text-sm justify-center">
+        <ul className=" w-3/4 h-1/2 flex flex-col items-center gap-6 text-sm justify-center">
           <li>
             <Link href="/">
               <a className="text-secondary transition hover:text-secondary/75 text-xl">Home</a>
@@ -64,8 +64,8 @@ const Sidebar = () => {
               <a className="text-secondary transition hover:text-secondary/75 text-xl">About Us</a>
             </Link>
           </li>
+          <SocialButtons />
         </ul>
-        <SocialButtons />
       </div>
     </nav>
   );
