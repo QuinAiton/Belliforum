@@ -6,13 +6,14 @@ import { urlFor } from "../lib/urlFor";
 const Team = ({ memberProps, teamProps }) => {
   const { about_us_content: content } = teamProps;
   const aboutContentArray = Object.values(content);
-  const aboutContent = aboutContentArray.map((section, index) => {
+
+  const aboutContent = aboutContentArray.map((section) => {
     const imageConverter = urlFor(section.image).url();
     return (
       <section
         key={section.title}
         style={{ backgroundImage: `url(${imageConverter})` }}
-        className="z-10 relative flex items-center justify-center h-screen bg-fixed bg-center bg-cover"
+        className="z-10 relative flex items-center justify-center h-screen bg-scroll md:bg-fixed bg-center bg-cover"
       >
         <div className="z-20 relative w-full h-screen bg-black bg-opacity-[60%] flex flex-col gap-5b justify-center items-center p-5 text-white">
           <h1 data-aos="fade-right" className="text-4xl md:text-4xl">

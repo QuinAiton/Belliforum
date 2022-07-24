@@ -10,7 +10,7 @@ export const Home = ({ sanity }) => {
     <>
       <header
         style={{ backgroundImage: `url(${homeImage})` }}
-        className="z-10 relative flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover"
+        className="z-10 relative flex items-center justify-center h-screen mb-12 bg-scroll md:bg-fixed bg-center bg-cover"
       >
         <div className="z-20 relative w-full h-screen bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
           <h1 data-aos="fade-up" className="text-7xl md:text-8xl">
@@ -44,10 +44,10 @@ export const Home = ({ sanity }) => {
       </div>
       <section
         style={{ backgroundImage: `url(${statImage})` }}
-        className=" flex items-center justify-center h-[40vh] md:h-[60vh] mb-12 bg-fixed bg-center bg-cover "
+        className=" flex items-center justify-center h-[40vh] md:h-[60vh] mb-12 bg-scroll md:bg-fixed bg-center bg-cover "
       >
-        <div className="-z-0 w-full h-[40vh] md:h-[60vh] bg-fixed bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
-          <p className="-z-10 p-5 text-center text-3xl md:text-5xl fixed top-1/2">
+        <div className="-z-0 w-full h-[40vh] md:h-[60vh] bg-scroll md:bg-fixed bg-black bg-opacity-40 flex flex-col gap-5b justify-center items-center p-5 text-white">
+          <p className="-z-10 p-5 text-center text-3xl md:text-5xl md:fixed top-1/2">
             {sanity.home_page_content.stat_section.stat}
           </p>
         </div>
@@ -65,7 +65,7 @@ export const Home = ({ sanity }) => {
       </div>
       <section
         style={{ backgroundImage: `url(${sectionThreeImage})` }}
-        className="z-10 relative flex items-center justify-center h-screen bg-fixed bg-center bg-cover"
+        className="z-10 relative flex items-center justify-center h-screen bg-scroll md:bg-fixed bg-center bg-cover"
       >
         <div className="z-20 relative w-full h-screen bg-black bg-opacity-[55%] flex flex-col gap-5b justify-center items-center p-5 text-white">
           <h1 data-aos="fade-right" className="text-4xl md:text-4xl">
