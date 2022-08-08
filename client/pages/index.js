@@ -6,16 +6,16 @@ import Contact from "../components/Contact";
 import MapComponent from "../components/MapComponent";
 import sanityClient from "../config/sanityClient";
 
-const index = ({ homeProps, contactProps }) => {
+const index = ({ homeProps, contactProps, disclaimer }) => {
   return (
     <>
-      <Sidebar />
+      <Sidebar  />
       <Home sanity={homeProps[0]} />
       <section className="grid md:grid-cols-2">
         <Contact sanity={contactProps[0]} />
         <MapComponent />
       </section>
-      <Footer />
+      <Footer disclaimer={disclaimer[0].disclaimer}/>
     </>
   );
 };
@@ -33,9 +33,9 @@ export const getStaticProps = async () => {
             }
         },
          home_page_content{ 
-            section_one{body, title}, 
-            section_two{body, title}, 
-            section_three{body,title,image}, 
+            section_one{title,body_one, body_two}, 
+            section_two{title, body_one, body_two, actions}, 
+            section_three{title,image, body_one, body_two, body_three}, 
             stat_section{stat, stat_image}
         }
     }`
@@ -47,5 +47,11 @@ export const getStaticProps = async () => {
       title
     }`
   );
-  return { props: { homeProps, contactProps } };
+
+  const disclaimer = await sanityClient.fetch( 
+    `*[_type == "disclaimer"]{ 
+      disclaimer
+    }`
+  )
+  return { props: { homeProps, contactProps, disclaimer } };
 };

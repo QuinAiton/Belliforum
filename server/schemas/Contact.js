@@ -12,7 +12,8 @@ export default {
     {
       name: "location",
       title: "Buisness Location",
-      type: "string",
+      type: 'array',
+      of: [{type: 'string'}],
       description: "where is your buisness located",
     },
     {

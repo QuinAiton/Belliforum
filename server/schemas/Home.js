@@ -41,29 +41,22 @@ export default {
           type: "document",
           fields: [
             {
-              name: "title",
-              title: "Title",
-              type: "document",
-              fields: [
-                {
-                  name: "one",
-                  type: "string",
-                },
-                {
-                  name: "two",
-                  type: "string",
-                },
-                {
-                  name: "three",
-                  type: "string",
-                },
-              ],
+              title: 'Title',
+              name: 'title',
+              type: 'array',
+              of: [{type: 'string'}],
             },
             {
-              name: "body",
-              title: "Content",
-              type: "string",
-              description: "What's the main content for the first section?",
+              title: 'Body One',
+              name: 'body_one',
+              type: 'array',
+              of: [{type: 'string'}],
+            },
+             {
+              title: 'Body Two',
+              name: 'body_two',
+              type: 'array',
+              of: [{type: 'string'}],
             },
           ],
         },
@@ -95,13 +88,22 @@ export default {
               name: "title",
               title: "Title",
               type: "string",
-              description: "What's the title for the second section?",
             },
             {
-              name: "body",
-              title: "Content",
+              name: "body_one",
+              title: "Body One",
               type: "string",
-              description: "What's the main content for the second section?",
+            },
+            {
+              name: "body_two",
+              title: "Body Two",
+              type: "string",
+            },
+            {
+              title: 'body Three',
+              name: 'actions',
+              type: 'array',
+              of: [{type: 'string'}],
             },
           ],
         },
@@ -123,10 +125,22 @@ export default {
               description: "What's the title for the third section?",
             },
             {
-              name: "body",
-              title: "Content",
+              name: "body_one",
+              title: "Body One",
               type: "string",
               description: "What's the main content for the third section?",
+            },
+             {
+              title: 'Body Two',
+              name: 'body_two',
+              type: 'array',
+              of: [{type: 'string'}],
+            },
+             {
+              title: 'Body Three',
+              name: 'body_three',
+              type: 'array',
+              of: [{type: 'string'}],
             },
           ],
         },
@@ -134,13 +148,4 @@ export default {
     },
   ],
 };
-// {
-//   name: 'cta',
-//   description: "What's URL for the homepage CTA?",
-//   title: 'CTA',
-//   type: 'slug',
-//   options: {
-//     maxLength: 200,
-//   },
-//   validation: (Rule) => [Rule.required().error('Field cannot be empty')],
-// },
+

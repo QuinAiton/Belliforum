@@ -22,7 +22,7 @@ const Team = ({ memberProps, teamProps }) => {
           <hr data-aos="fade-left" className="w-[30vw] border border-secondary mt-2 mb-5" />
           <p
             data-aos="fade-right"
-            className="p-2 md:px-[20vw] text-left text-md md:text-xl last:mb-20 "
+            className="p-2 md:px-[20vw] text-left text-md md:text-xl last:mb-20 text-center "
           >
             {section.body}
           </p>
@@ -36,7 +36,7 @@ const Team = ({ memberProps, teamProps }) => {
     return (
       <div
         key={member.title}
-        className=" bg-white grid grid-rows-5 w-full md:full h-[70vh] md:h-[50vh]  place-content-center shadow-xl"
+        className=" bg-white grid grid-rows-5 w-full h-[70vh]  place-content-center shadow-xl"
       >
         <div className="relative row-span-2 w-full h-full">
           <Image src={imageUrl} layout="fill" objectFit="cover" />
@@ -89,7 +89,7 @@ const Team = ({ memberProps, teamProps }) => {
             <h2 className="text-center text-5xl text-primary">Meet Our Team Of Experts</h2>
             <hr className="border border-primary w-[35vw]" />
           </div>
-          <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-5 md:p-10 md:w-5/6 md:mx-auto rounded-xl   ">
+          <div className="grid grid-col md:grid-cols-3 gap-10 place-items-center place-content-center p-5 md:p-20 md:w-5/6 md:mx-auto rounded-xl   ">
             {MemoTeamMembers}
           </div>
         </div>
