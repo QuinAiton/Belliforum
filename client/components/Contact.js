@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdMarkEmailRead } from "react-icons/md";
 import { GrLocationPin } from "react-icons/gr";
-const Contact = ({ sanity, formSubmitHandler }) => {
+const Contact = ({ sanity}) => {
   return (
     <div className=" relative z-20 w-full py-0 mx-auto lg:px-8">
       <div className="max-w-lg mx-auto">
@@ -11,11 +11,15 @@ const Contact = ({ sanity, formSubmitHandler }) => {
           </h1>
           <div data-aos="fade-left" className="flex items-end gap-2">
             <GrLocationPin className="text-xl text-primary" />
-            <p>{sanity.location}</p>
+            {sanity.location.map((item)=>{ 
+              return(
+            <p>{item}</p>
+              )
+            })}
           </div>
           <div data-aos="fade-right" className="flex items-end gap-2">
             <MdMarkEmailRead className="text-xl text-primary" />
-            <a href="mailto:grant@levupfinancials.com">{sanity.email}</a>
+            <a href='mailto:info@belliforum.com'>{sanity.email}</a>
           </div>
         </div>
         <form

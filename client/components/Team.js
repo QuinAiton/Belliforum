@@ -22,7 +22,7 @@ const Team = ({ memberProps, teamProps }) => {
           <hr data-aos="fade-left" className="w-[30vw] border border-secondary mt-2 mb-5" />
           <p
             data-aos="fade-right"
-            className="p-2 md:px-[20vw] text-left text-md md:text-xl last:mb-20 text-center "
+            className="p-2 md:px-[20vw] text-md md:text-xl last:mb-20 text-center "
           >
             {section.body}
           </p>

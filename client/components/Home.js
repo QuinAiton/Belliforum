@@ -9,7 +9,6 @@ export const Home = ({ sanity }) => {
 
   const {home_page_content} = sanity
   const {section_one, section_two, section_three, stat_section}=home_page_content
-  console.log(section_three)
 
 
 

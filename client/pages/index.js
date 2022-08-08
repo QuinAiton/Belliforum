@@ -13,7 +13,7 @@ const index = ({ homeProps, contactProps, disclaimer }) => {
       <Home sanity={homeProps[0]} />
       <section className="grid md:grid-cols-2">
         <Contact sanity={contactProps[0]} />
-        <MapComponent />
+        <MapComponent contactProps={contactProps[0]} />
       </section>
       <Footer disclaimer={disclaimer[0].disclaimer}/>
     </>
