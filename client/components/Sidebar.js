@@ -14,9 +14,9 @@ const Sidebar = () => {
       >
         <div className="text-secondary">
           <Image
-            src="/assets/belliforumLogo.jpg"
-            height={75}
-            width={75}
+            src="/assets/belliforumLogo.png"
+            height={150}
+            width={150}
             objectFit="contain"
             className="rounded-full scale-150"
           />
@@ -48,6 +48,15 @@ const Sidebar = () => {
           <span className="hamburger-inner"></span>
         </span>
       </button>
+         <div className="text-secondary lg:hidden">
+          <Image
+            src="/assets/belliforumLogo.png"
+            height={55}
+            width={100}
+            objectFit="contain"
+            className="rounded-full scale-150"
+          />
+        </div>
       <div
         className={` w-5/6 md:w-1/2 top-0 right-0 bg-primary text-white fixed h-full z-40  ease-in-out duration-300  ${
           showSidebar ? "translate-x-0 " : "translate-x-full"
