@@ -28,7 +28,7 @@ const MapComponent = ({contactProps}) => {
             focusAfterOpen={false}
           >
             <div className="flex flex-col items-center gap-2 py-5 px-10">
-              {contactProps.location.map(item => <span>{item}</span> 
+              {contactProps.location.map(item => <span key={item}>{item}</span> 
               )}
               <br />
               <a

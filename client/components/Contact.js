@@ -13,7 +13,7 @@ const Contact = ({ sanity}) => {
             <GrLocationPin className="text-xl text-primary" />
             {sanity.location.map((item)=>{ 
               return(
-            <p>{item}</p>
+            <p key={item}>{item}</p>
               )
             })}
           </div>
