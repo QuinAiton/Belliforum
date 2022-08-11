@@ -1,9 +1,11 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import { Home } from "../components/Home";
-import Footer from "../components/Footer";
-import Contact from "../components/Contact";
-import MapComponent from "../components/MapComponent";
+import dynamic from "next/dynamic";
+const Sidebar = dynamic(() => import("../components/Sidebar"));
+const Home = dynamic(() => import("../components/Home"));
+const Footer = dynamic(() => import("../components/Footer"));
+const Contact = dynamic(() => import("../components/Contact"));
+const MapComponent = dynamic(() => import("../components/MapComponent"));
+
 import sanityClient from "../config/sanityClient";
 
 const index = ({ homeProps, contactProps, disclaimer }) => {

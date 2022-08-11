@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import { urlFor } from "../lib/urlFor";
 
-export const Home = ({ sanity }) => {
+ const Home = ({ sanity }) => {
   const homeImage = urlFor(sanity.image).url();
   const statImage = urlFor(sanity.home_page_content.stat_section.stat_image).url();
   const sectionThreeImage = urlFor(sanity.home_page_content.section_three.image).url();
@@ -154,3 +154,4 @@ const section_three_body_two = section_three.body_two.map((body)=>{
     </>
   );
 };
+export default Home
