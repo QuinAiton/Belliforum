@@ -59,9 +59,9 @@ const Team = ({ memberProps, teamProps }) => {
           data-aos={"fade-left"}
           className="text-1xl pb-5 flex items-center justify-center mx-auto"
         >
-          <hr className="border border-primary w-[15vw] mr-1" />
-          <p className="uppercase">{teamProps.header}</p>
-          <hr className="border border-primary w-[15vw] ml-1" />
+          <hr className="border border-primary md:w-[15vw] w-[10vw] mr-1" />
+          <p className="uppercase text-sm">{teamProps.header}</p>
+          <hr className="border border-primary md:w-[15vw] w-[10vw] ml-1" />
         </div>
         <h1
           data-aos={"fade-right"}
@@ -75,7 +75,7 @@ const Team = ({ memberProps, teamProps }) => {
         >
           {teamProps.hero_content}
         </p>
-        <div className="flex flex-col justify-center items-center gap-2 relative -bottom-[15vh] md:-bottom-[0vh] xxl:-bottom-[12vh]">
+        <div className="flex flex-col justify-center items-center gap-2 relative bottom-0 md:bottom-[10vh] xxl:-bottom-[12vh]">
           <p className="text-primary">scroll</p>
           <CgArrowLongDown className=" text-primary text-2xl animate-bounce" />
         </div>

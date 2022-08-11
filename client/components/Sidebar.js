@@ -15,8 +15,8 @@ const Sidebar = () => {
         <div className="text-secondary">
           <Image
             src="/assets/belliforumLogo.png"
-            height={150}
-            width={150}
+            height={125}
+            width={125}
             objectFit="contain"
             className="rounded-full scale-150"
           />
