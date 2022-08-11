@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
-    <Html>
+    <Html className=" scroll-smooth">
       <Head>
         <link href="dist/hamburgers.css" rel="stylesheet"></link>
         <link
